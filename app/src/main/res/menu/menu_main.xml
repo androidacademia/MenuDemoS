@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="menu.com.girish.menudemo.MainActivity">
+    <item
+        android:id="@+id/action_copy"
+        android:orderInCategory="90"
+        android:title="@string/action_copy"
+        android:icon="@drawable/ic_action_copy"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_paste"
+        android:orderInCategory="80"
+        android:title="@string/action_paste"
+        android:icon="@drawable/ic_action_paste"
+        app:showAsAction="always" />
+
+    <item
+        android:orderInCategory="80"
+        android:title="@string/action_courses"
+        app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/action_android"
+                android:orderInCategory="80"
+                android:title="@string/action_android"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_arduino"
+                android:orderInCategory="80"
+                android:title="@string/action_arduino"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_java"
+                android:orderInCategory="80"
+                android:title="@string/action_java"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+</menu>
